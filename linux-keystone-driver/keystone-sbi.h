@@ -15,6 +15,17 @@
 #define SBI_SM_RESUME_ENCLAVE   2005
 
 
+struct sbiret {
+	long error;
+	long value;
+};
+
+struct sbiret sbi_ecall(int ext, int fid, unsigned long arg0,
+			unsigned long arg1, unsigned long arg2,
+			unsigned long arg3, unsigned long arg4,
+			unsigned long arg5);
+
+
 struct keystone_sbi_pregion_t
 {
   uintptr_t paddr;
