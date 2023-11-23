@@ -37,7 +37,7 @@ endif()
 set(ISA rv${BITS}imafdc)
 set(confdir ${CMAKE_SOURCE_DIR}/overlays/keystone/configs)
 set(patchdir ${CMAKE_SOURCE_DIR}/overlays/keystone/patches)
-set(cross_compile riscv${BITS}-buildroot-linux-gnu-)
+set(cross_compile riscv${BITS}-buildroot-linux-uclibc-)
 
 set(sm_srcdir ${CMAKE_SOURCE_DIR}/sm)
 set(buildroot_srcdir ${CMAKE_SOURCE_DIR}/buildroot)
