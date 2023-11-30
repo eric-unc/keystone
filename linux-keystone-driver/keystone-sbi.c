@@ -1,5 +1,7 @@
 #include "keystone-sbi.h"
 
+#include <asm/sbi.h>
+
 struct sbiret sbi_sm_create_enclave(struct keystone_sbi_create_t* args) {
   return sbi_ecall(KEYSTONE_SBI_EXT_ID,
       SBI_SM_CREATE_ENCLAVE,
