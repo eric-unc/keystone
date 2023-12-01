@@ -1,0 +1,11 @@
+prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host
+exec_prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host
+libdir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host/lib
+includedir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.0
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

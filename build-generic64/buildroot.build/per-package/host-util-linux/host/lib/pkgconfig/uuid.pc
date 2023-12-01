@@ -1,0 +1,11 @@
+prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-util-linux/host
+exec_prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-util-linux/host
+libdir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-util-linux/host/lib
+includedir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-util-linux/host/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.0
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

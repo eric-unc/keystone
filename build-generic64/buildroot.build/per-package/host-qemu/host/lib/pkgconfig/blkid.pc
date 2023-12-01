@@ -1,0 +1,10 @@
+prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host
+exec_prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host
+libdir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host/lib
+includedir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-qemu/host/include
+
+Name: blkid
+Description: Block device id library
+Version: 2.38.0
+Cflags: -I${includedir}/blkid
+Libs: -L${libdir} -lblkid

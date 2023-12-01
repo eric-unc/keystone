@@ -1,0 +1,11 @@
+prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-slirp/host
+exec_prefix=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-slirp/host
+libdir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-slirp/host/lib
+includedir=/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-slirp/host/include
+
+Name: fdisk
+Description: fdisk library
+Version: 2.38.0
+Requires.private: uuid blkid
+Cflags: -I${includedir}/libfdisk
+Libs: -L${libdir} -lfdisk
