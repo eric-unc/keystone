@@ -1,2 +1,0 @@
-add-auto-load-safe-path /home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-gdb/host/riscv64-buildroot-linux-musl/sysroot
-set sysroot /home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-gdb/host/riscv64-buildroot-linux-musl/sysroot

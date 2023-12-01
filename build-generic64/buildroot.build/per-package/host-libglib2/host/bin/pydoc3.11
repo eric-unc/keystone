@@ -1,5 +1,0 @@
-#!/home/yulu/Desktop/Projects/keystone/build-generic64/buildroot.build/per-package/host-libglib2/host/bin/python3.11
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()

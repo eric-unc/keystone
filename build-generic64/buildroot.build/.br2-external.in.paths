@@ -1,8 +1,0 @@
-#
-# Automatically generated file; DO NOT EDIT.
-#
-
-config BR2_EXTERNAL_KEYSTONE_PATH
-	string
-	default "/home/yulu/Desktop/Projects/keystone/overlays/keystone"
-
