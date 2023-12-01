@@ -26,6 +26,8 @@
 #include "call/net_wrap.h"
 #endif /* USE_NET_SYSCALL */
 
+#include <sys/types.h>
+
 extern void exit_enclave(uintptr_t arg0);
 
 uintptr_t dispatch_edgecall_syscall(struct edge_syscall* syscall_data_ptr, size_t data_len){
@@ -212,7 +214,7 @@ void handle_syscall(struct encl_ctx* ctx)
 
 #ifdef USE_LINUX_SYSCALL
   case(SYS_clock_gettime):
-    ret = linux_clock_gettime((__clockid_t)arg0, (struct timespec*)arg1);
+    ret = linux_clock_gettime((clockid_t)arg0, (struct timespec*)arg1);
     break;
 
   case(SYS_getrandom):
@@ -245,7 +247,7 @@ void handle_syscall(struct encl_ctx* ctx)
 
   case(SYS_mmap):
     ret = syscall_mmap((void*) arg0, (size_t)arg1, (int)arg2,
-                       (int)arg3, (int)arg4, (__off_t)arg5);
+                       (int)arg3, (int)arg4, (off_t)arg5);
     break;
 
   case(SYS_munmap):
