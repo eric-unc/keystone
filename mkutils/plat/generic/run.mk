@@ -31,6 +31,6 @@ run:
 
 debug-connect:
 	$(call log,info,Connecting to QEMU)
-	$(BUILDROOT_BUILDDIR)/host/bin/riscv64-buildroot-linux-gnu-gdb \
+	$(BUILDROOT_BUILDDIR)/host/bin/riscv64-buildroot-linux-musl-gdb \
                 -iex "set KEYSTONE=$(KEYSTONE)" \
                 -x $(KEYSTONE)/scripts/gdb/generic.cfg
