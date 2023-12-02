@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <sys/select.h>
+#include <sys/types.h>
+
 #include "call/syscall.h"
 #include "util/string.h"
 #include "edge_call.h"
@@ -25,8 +27,6 @@
 #ifdef USE_NET_SYSCALL
 #include "call/net_wrap.h"
 #endif /* USE_NET_SYSCALL */
-
-#include <sys/types.h>
 
 extern void exit_enclave(uintptr_t arg0);
 

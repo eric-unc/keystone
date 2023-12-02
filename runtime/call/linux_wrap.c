@@ -5,6 +5,7 @@
 
 #include <signal.h>
 #include <sys/mman.h>
+#include <sys/types.h>
 #include <sys/utsname.h>
 #include <time.h>
 
@@ -13,9 +14,6 @@
 #include "util/rt_util.h"
 #include "call/syscall.h"
 #include "uaccess.h"
-
-#include <sys/types.h>
-#include <limits.h>
 
 #define CLOCK_FREQ 1000000000
 
