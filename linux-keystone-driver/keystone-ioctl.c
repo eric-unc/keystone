@@ -8,6 +8,10 @@
 #include <asm/sbi.h>
 #include <linux/uaccess.h>
 
+#ifdef CONFIG_RISCV_M_MODE
+shit
+#endif
+
 int __keystone_destroy_enclave(unsigned int ueid);
 
 int keystone_create_enclave(struct file *filep, unsigned long arg)

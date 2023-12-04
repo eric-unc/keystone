@@ -1,0 +1,25 @@
+From 268a3e7dd378c40db852c744cb6f897f7aceb553 Mon Sep 17 00:00:00 2001
+From: Eric Schneider <eric@cs.unc.edu>
+Date: Sat, 2 Dec 2023 18:14:16 -0500
+Subject: [PATCH] Enable SBI per default, regardless of MMU status
+
+---
+ arch/riscv/Kconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/riscv/Kconfig b/arch/riscv/Kconfig
+index 593cf09264d8..7ac291eeef18 100644
+--- a/arch/riscv/Kconfig
++++ b/arch/riscv/Kconfig
+@@ -149,7 +149,7 @@ config ARCH_MMAP_RND_COMPAT_BITS_MAX
+ # set if we run in machine mode, cleared if we run in supervisor mode
+ config RISCV_M_MODE
+ 	bool
+-	default !MMU
++	default n
+ 
+ # set if we are running in S-mode and can use SBI calls
+ config RISCV_SBI
+-- 
+2.34.1
+
