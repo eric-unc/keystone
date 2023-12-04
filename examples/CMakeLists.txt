@@ -39,6 +39,7 @@ set(KEYSTONE_LIB_EAPP ${KEYSTONE_SDK_DIR}/lib/libkeystone-eapp.a)
 add_custom_target("examples")
 
 # add all examples below
+add_subdirectory(benchmarka)
 add_subdirectory(hello)
 add_subdirectory(hello-native)
 add_subdirectory(attestation)
