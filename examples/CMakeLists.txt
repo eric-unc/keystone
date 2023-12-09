@@ -40,6 +40,7 @@ add_custom_target("examples")
 
 # add all examples below
 add_subdirectory(benchmarka)
+add_subdirectory(benchmarkb)
 add_subdirectory(hello)
 add_subdirectory(hello-native)
 add_subdirectory(attestation)
